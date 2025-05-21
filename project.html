@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+        <div class="hidden md:flex space-x-6">
+            <a href="#home" class="hover:text-green-100 transition duration-300">Home</a>
+            <a href="#about" class="hover:text-green-100 transition duration-300">About</a>
+            <a href="#activities" class="hover:text-green-100 transition duration-300">Activities</a>
+            <a href="#schedule" class="hover:text-green-100 transition duration-300">Schedule</a>
+            <a href="#contact" class="hover:text-green-100 transition duration-300">Contact</a>
+        </div>
+        
+        <div class="md:hidden">
+            <button id="menu-toggle" class="focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-green-500 pb-4 px-4">
+        <a href="#home" class="block py-2 hover:bg-green-600 px-3 rounded">Home</a>
+        <a href="#about" class="block py-2 hover:bg-green-600 px-3 rounded">About</a>
+        <a href="#activities" class="block py-2 hover:bg-green-600 px-3 rounded">Activities</a>
+        <a href="#schedule" class="block py-2 hover:bg-green-600 px-3 rounded">Schedule</a>
+        <a href="#contact" class="block py-2 hover:bg-green-600 px-3 rounded">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero-pattern text-white py-20">
+    <div class="container mx-auto px-4 flex flex-col items-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Adventure Awaits at Summer Camp!</h1>
+        <p class="text-xl md:text-2xl text-center mb-10 max-w-2xl">Join us for an unforgettable summer filled with fun, friendship, and outdoor adventures.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#contact" class="bg-white text-green-600 hover:bg-green-100 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 text-center">Register Now</a>
+            <a href="#activities" class="bg-transparent border-2 border-white hover:bg-white hover:text-green-600 font-semibold py-3 px-8 rounded-full transition duration-300 text-center">Explore Activities</a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">About Our Camp</h2>
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+            <div class="md:w-1/2">
+                <svg class="w-full h-auto" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="250" width="500" height="150" fill="#8B5E3C" />
+                    <rect x="0" y="0" width="500" height="250" fill="#87CEEB" />
+                    <circle cx="400" cy="80" r="40" fill="#FDB813" />
+                    <polygon points="250,250 150,100 350,100" fill="#228B22" />
+                    <polygon points="180,250 120,150 240,150" fill="#228B22" />
+                    <polygon points="320,250 260,150 380,150" fill="#228B22" />
+                    <rect x="230" y="180" width="40" height="70" fill="#8B4513" />
+                    <rect x="150" y="200" width="200" height="50" fill="#8B4513" />
+                    <rect x="170" y="170" width="20" height="30" fill="#87CEFA" />
+                    <rect x="310" y="170" width="20" height="30" fill="#87CEFA" />
+                </svg>
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="text-2xl font-semibold mb-4 text-green-600">Creating Memories Since 2005</h3>
+                <p class="text-gray-700 mb-6">Adventure Camp provides a safe, fun, and educational environment where children can explore nature, develop new skills, and make lifelong friendships. Our experienced counselors are dedicated to ensuring every camper has an amazing experience.</p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <div class="text-green-600 font-bold text-xl mb-2">15+</div>
+                        <div class="text-gray-600">Years Experience</div>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <div class="text-green-600 font-bold text-xl mb-2">20+</div>
+                        <div class="text-gray-600">Activities</div>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <div class="text-green-600 font-bold text-xl mb-2">500+</div>
+                        <div class="text-gray-600">Happy Campers</div>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <div class="text-green-600 font-bold text-xl mb-2">30+</div>
+                        <div class="text-gray-600">Staff Members</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Activities Section -->
+<section id="activities" class="py-16 bg-green-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Camp Activities</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Discover the wide range of exciting activities we offer to keep campers engaged, challenged, and having fun all summer long!</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Activity 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden activity-card transition duration-300">
+                <div class="h-48 bg-green-500 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">Swimming</h3>
+                    <p class="text-gray-600">Our supervised swimming sessions in our beautiful lake help campers build confidence in the water while having fun.</p>
+                </div>
+            </div>
+            
+            <!-- Activity 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden activity-card transition duration-300">
+                <div class="h-48 bg-yellow-500 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 22V12h6v10" />
+                    </svg>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">Arts & Crafts</h3>
+                    <p class="text-gray-600">Express creativity through various art projects, from painting and drawing to making friendship bracelets.</p>
+                </div>
+            </div>
+            
+            <!-- Activity 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden activity-card transition duration-300">
+                <div class="h-48 bg-blue-500 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">Sports</h3>
+                    <p class="text-gray-600">From soccer and basketball to volleyball and archery, our sports program offers something for every camper.</p>
+                </div>
+            </div>
+            
+            <!-- Activity 4 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden activity-card transition duration-300">
+                <div class="h-48 bg-red-500 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                    </svg>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">Campfire</h3>
+                    <p class="text-gray-600">Evening campfires with stories, songs, and s'mores create magical memories that last a lifetime.</p>
+                </div>
+            </div>
+            
+            <!-- Activity 5 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden activity-card transition duration-300">
+                <div class="h-48 bg-purple-500 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">Nature Exploration</h3>
+                    <p class="text-gray-600">Guided hikes and nature studies help campers connect with the environment and learn about local ecosystems.</p>
+                </div>
+            </div>
+            
+            <!-- Activity 6 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden activity-card transition duration-300">
+                <div class="h-48 bg-indigo-500 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">Team Building</h3>
+                    <p class="text-gray-600">Fun challenges and games that promote teamwork, communication, and problem-solving skills.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Schedule Section -->
+<section id="schedule" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Camp Schedule</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Our summer camp runs in weekly sessions from June through August. Each day is carefully structured to provide a balance of activities.</p>
+        
+        <div class="bg-green-50 rounded-xl p-6 md:p-8 shadow-md max-w-4xl mx-auto">
+            <h3 class="text-xl font-semibold mb-6 text-green-700">Sample Daily Schedule</h3>
+            
+            <div class="space-y-4">
+                <div class="flex flex-col sm:flex-row">
+                    <div class="sm:w-1/4 font-semibold text-green-600 mb-1 sm:mb-0">7:30 - 8:30 AM</div>
+                    <div class="sm:w-3/4">Wake up & Morning Routine</div>
+                </div>
+                <div class="flex flex-col sm:flex-row">
+                    <div class="sm:w-1/4 font-semibold text-green-600 mb-1 sm:mb-0">8:30 - 9:15 AM</div>
+                    <div class="sm:w-3/4">Breakfast</div>
+                </div>
+                <div class="flex flex-col sm:flex-row">
+                    <div class="sm:w-1/4 font-semibold text-green-600 mb-1 sm:mb-0">9:30 - 11:30 AM</div>
+                    <div class="sm:w-3/4">Morning Activities (Rotating)</div>
+                </div>
+                <div class="flex flex-col sm:flex-row">
+                    <div class="sm:w-1/4 font-semibold text-green-600 mb-1 sm:mb-0">12:00 - 1:00 PM</div>
+                    <div class="sm:w-3/4">Lunch</div>
+                </div>
+                <div class="flex flex-col sm:flex-row">
+                    <div class="sm:w-1/4 font-semibold text-green-600 mb-1 sm:mb-0">1:00 - 2:00 PM</div>
+                    <div class="sm:w-3/4">Rest Hour / Reading Time</div>
+                </div>
+                <div class="flex flex-col sm:flex-row">
+                    <div class="sm:w-1/4 font-semibold text-green-600 mb-1 sm:mb-0">2:00 - 4:00 PM</div>
+                    <div class="sm:w-3/4">Afternoon Activities (Swimming, Sports)</div>
+                </div>
+                <div class="flex flex-col sm:flex-row">
+                    <div class="sm:w-1/4 font-semibold text-green-600 mb-1 sm:mb-0">4:00 - 5:30 PM</div>
+                    <div class="sm:w-3/4">Free Choice Activities</div>
+                </div>
+                <div class="flex flex-col sm:flex-row">
+                    <div class="sm:w-1/4 font-semibold text-green-600 mb-1 sm:mb-0">5:30 - 6:30 PM</div>
+                    <div class="sm:w-3/4">Dinner</div>
+                </div>
+                <div class="flex flex-col sm:flex-row">
+                    <div class="sm:w-1/4 font-semibold text-green-600 mb-1 sm:mb-0">7:00 - 8:30 PM</div>
+                    <div class="sm:w-3/4">Evening Program (Campfire, Games)</div>
+                </div>
+                <div class="flex flex-col sm:flex-row">
+                    <div class="sm:w-1/4 font-semibold text-green-600 mb-1 sm:mb-0">9:00 - 9:30 PM</div>
+                    <div class="sm:w-3/4">Prepare for Bed</div>
+                </div>
+                <div class="flex flex-col sm:flex-row">
+                    <div class="sm:w-1/4 font-semibold text-green-600 mb-1 sm:mb-0">10:00 PM</div>
+                    <div class="sm:w-3/4">Lights Out</div>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-6 border-t border-green-200">
+                <h4 class="font-semibold text-lg mb-3 text-green-700">2023 Camp Sessions</h4>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        Session 1: June 12 - June 18
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        Session 2: June 19 - June 25
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        Session 3: July 10 - July 16
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        Session 4: July 17 - July 23
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        Session 5: August 7 - August 13
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        Session 6: August 14 - August 20
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-green-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Contact Us</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Have questions about our summer camp? We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
+        
+        <div class="flex flex-col md:flex-row gap-8 max-w-5xl mx-auto">
+            <div class="md:w-1/2 bg-white p-6 rounded-xl shadow-md">
+                <form id="contactForm" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                    </div>
+                    
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                        <select id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            <option value="registration">Registration Information</option>
+                            <option value="program">Program Questions</option>
+                            <option value="facilities">Facilities Information</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" required></textarea>
+                    </div>
+                    
+                    <div class="pt-2">
+                        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 shadow-md">Send Message</button>
+                    </div>
+                </form>
+                
+                <div id="formStatus" class="mt-4 text-center hidden">
+                    <div id="successMessage" class="text-green-600 font-medium hidden">
+                        Thank you for your message! We'll get back to you soon.
+                    </div>
+                    <div id="errorMessage" class="text-red-600 font-medium hidden">
+                        There was a problem sending your message. Please try again.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-semibold mb-4 text-gray-800">Camp Information</h3>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <div>
+                            <h4 class="font-medium text-gray-800">Address</h4>
+                            <p class="text-gray-600">123 Adventure Lane<br>Pine Forest, CA 98765</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <div>
+                            <h4 class="font-medium text-gray-800">Phone</h4>
+                            <p class="text-gray-600">(555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <div>
+                            <h4 class="font-medium text-gray-800">Email</h4>
+                            <p class="text-gray-600">info@adventurecamp.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <div>
+                            <h4 class="font-medium text-gray-800">Office Hours</h4>
+                            <p class="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-pink-600 text-white p-2 rounded-full hover:bg-pink-700 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-blue-400 text-white p-2 rounded-full hover:bg-blue-500 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-red-600 text-white p-2 rounded-full hover:bg-red-700 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-green-800 text-white py-10">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Adventure Camp</h3>
+                <p class="mb-4">Creating unforgettable summer experiences for children since 2005. Our mission is to foster growth, friendship, and fun in a safe outdoor environment.</p>
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span>(555) 123-4567</span>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="hover:text-green-300 transition duration-300">Home</a></li>
+                    <li><a href="#about" class="hover:text-green-300 transition duration-300">About Us</a></li>
+                    <li><a href="#activities" class="hover:text-green-300 transition duration-300">Activities</a></li>
+                    <li><a href="#schedule" class="hover:text-green-300 transition duration-300">Schedule</a></li>
+                    <li><a href="#contact" class="hover:text-green-300 transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
+                <p class="mb-4">Subscribe to our newsletter for camp updates, early registration discounts, and more!</p>
+                <form id="newsletterForm" class="flex">
+                    <input type="email" placeholder="Your email address" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800">
+                    <button type="submit" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-r-lg transition duration-300">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="border-t border-green-700 mt-8 pt-6 text-center text-sm">
+            <p>&copy; 2023 Adventure Camp. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            }
+        });
+    });
+    
+    // Contact form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formStatus = document.getElementById('formStatus');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+        
+        // In a real implementation, you would send the form data to a server
+        // This is a demo that simulates a successful form submission
+        
+        // Show the form status
+        formStatus.classList.remove('hidden');
+        
+        // Simulate form processing
+        setTimeout(() => {
+            // Show success message
+            successMessage.classList.remove('hidden');
+            errorMessage.classList.add('hidden');
+            
+            // Reset form
+            this.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                formStatus.classList.add('hidden');
+                successMessage.classList.add('hidden');
+            }, 5000);
+        }, 1000);
+    });
+    
+    // Newsletter form submission
+    document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // In a real implementation, you would send the email to a server
+        // This is a demo that simulates a successful subscription
+        
+        const emailInput = this.querySelector('input[type="email"]');
+        const email = emailInput.value;
+        
+        if (email) {
+            // Reset form
+            this.reset();
+            
+            // Show a simple alert for demo purposes
+            alert('Thank you for subscribing to our newsletter!');
+        }
+    });
+</script>
+
+</html>
